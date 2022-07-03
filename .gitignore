@@ -1,0 +1,24 @@
+# Dropbox settings and caches
+.dropbox
+.dropbox.attr
+.dropbox.cache
+.DS_Store
+*/.DS_Store
+css/.DS_Store
+
+# Cache folder
+.vscode/
+
+# Reference
+docs/*
+library/*
+
+*.esdynamo
+*.json
+*.config
+
+build/
+#.Espresso/*
+#.Espresso/Settings.json
+Prepros Export/
+Prepros Export/*.*
