@@ -1,0 +1,127 @@
+.is-flexbox {
+    display: flex;
+}
+
+.is-grid {
+    display: grid;
+}
+
+.last {
+    *border-bottom: none;
+    margin-right: 0 !important;
+}
+
+.empty {
+    text-indent: -9999px;
+}
+
+// Other
+
+.is-centered {
+    margin: auto;
+    text-align: center;
+}
+
+.is-marginless {
+    margin: 0 !important
+}
+
+.is-paddingless {
+    padding: 0 !important
+}
+
+.is-radiusless {
+    border-radius: 0 !important
+}
+
+.is-shadowless {
+    box-shadow: none !important
+}
+
+.is-pulled-left {
+    float: left !important
+}
+
+.is-pulled-right {
+    float: right !important;
+}
+
+// Overflow
+
+.is-clipped {
+    overflow: hidden !important;
+}
+
+// Overlay
+
+.is-overlay {
+    @include overlay;
+}
+
+.is-show {
+    display: block;
+}
+
+.is-hidden {
+    display: none;
+}
+
+.is-invisible {
+    visibility: hidden;
+}
+
+.is-onlydesktop {
+    display: block;
+}
+.is-onlymobile {
+    display: none;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .is-onlydesktop {
+        display: none;
+    }
+    .is-onlymobile {
+        display: block;
+    }
+    .break + .break {
+        margin-top: 4rem;
+    }
+}
+
+.is-scrolling {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    &::-webkit-scrollbar {
+        background: transparent;
+        width: 4px;
+    }
+    &::-webkit-scrollbar-track {
+        background: transparent; 
+    }
+    &::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, .15);
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background: rgba(0, 0, 0, .5);
+    }
+}
+
+/* IE6 */
+
+*:first-child+html .clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+* html .clearfix {
+    zoom: 1;
+}

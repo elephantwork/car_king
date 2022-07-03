@@ -1,0 +1,21 @@
+.container {
+    margin: 0 auto;
+    position: relative;
+    max-width: 1072px;
+    width: 92vw;
+    &.is-fluid {
+        margin-left: $gap;
+        margin-right: $gap;
+        max-width: none;
+        width: auto;
+    }
+    &.is-wide {
+        width: 85%;
+    }
+    &.is-fullwidth {
+        width: 100%;
+        max-width: 1920px;
+    }
+    @media screen and (min-width: 769px) {
+    }
+}

@@ -1,0 +1,65 @@
+// Colors
+
+$black:        hsl(0, 0%, 0%) !default;
+$black-bis:    hsl(0, 0%, 7%) !default;
+$black-ter:    hsl(0, 0%, 15%) !default;
+$grey-darker:  hsl(0, 0%, 20%) !default;
+$grey-dark:    hsl(0, 0%, 30%) !default;
+$grey:         hsl(240, 4.5%, 48%) !default;
+$grey-light:   hsl(0, 0%, 75%) !default;
+$grey-lighter: hsl(0, 0%, 90%) !default;
+$white-ter:    hsl(0, 0%, 96%) !default;
+$white-bis:    hsl(0, 0%, 98%) !default;
+$white:        hsl(0, 0%, 100%) !default;
+
+$red:          hsl(4, 90%, 60%) !default;
+$orange:       hsl(14,  100%, 53%) !default;
+$yellow:       #F3C300;
+$green:        hsl(141, 71%,  48%) !default;
+$teal:         #45D8B4;
+$cyan:         hsl(204, 86%,  53%) !default;
+$blue:         #293863 !default;
+$blue-dark:    #05141F !default;
+$purple:       #8511F1; // #8400B2 #8A03DE #8511F1
+$purple-dark:  #380575; // #400093
+$pink:         #FF00E2; // #B100FF
+$brown:        #a7947a;
+$spring:       #F6F3ED;
+
+$alpha: .8;
+
+// typography
+
+$content-font: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+$title-font: "Saira", "Microsoft JhengHei", sans-serif;
+$family-sans-serif: "Saira", "Microsoft JhengHei", sans-serif !default;
+$family-monospace: monospace !default;
+$render-mode: optimizeLegibility !default;
+    
+$size-1: 4rem !default;
+$size-2: 2.4rem !default;
+$size-3: 1.7rem !default;
+$size-4: 1.5rem !default;
+$size-5: 1.25rem !default;
+$size-6: 1rem !default;
+$size-7: 13px !default;
+$size-normal: 16px;
+
+// Responsiveness
+
+$gap: 32px !default;
+$mobile: 320px !default;
+$tablet: 769px !default;
+$desktop: 960px + (2 * $gap) !default;
+$widescreen: 1152px + (2 * $gap)  !default;
+$fullhd: 1344px + (2 * $gap)  !default;
+$fullhdplus: 1658px + (2 * $gap)  !default;
+
+// Miscellaneous
+
+$easing: ease-out !default;
+$radius-small: 3px !default;
+$radius: 12px !default;
+$radius-large: 24px !default;
+$radius-rounded: 290486px !default;
+$speed: 86ms !default;

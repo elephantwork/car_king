@@ -1,0 +1,188 @@
+.fullscreen {
+    height: 100vh;
+    overflow: hidden;
+    &:-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-color: rgba($maincolor, 0.8);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -2;
+    &.in {
+        z-index: 1003;
+    }
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .modal-wrap {
+        max-height: 75vh;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+            background: transparent;
+            width: 6px;
+        }
+        &::-webkit-scrollbar-track {
+            background: transparent; 
+        }
+        &::-webkit-scrollbar-thumb {
+            background: rgba(0, 0, 0, .15);
+        }
+        &::-webkit-scrollbar-thumb:hover {
+            background: rgba(0, 0, 0, .5);
+        }
+    }
+}
+
+.modal-panel {
+    position: absolute;
+    &.is-bottom {
+        display: none;
+        transform: translateY(400%);
+        transform-origin: bottom center;
+        transition: 400ms;
+        width: 33.3vw;
+        height: 100vh;
+        right: 0;
+        bottom: -100%;
+        overflow: hidden;
+        &.active {
+            transform: translateY(0);
+            display: block;
+        }
+        .modal-wrap, .modal-content {
+            height: 100%;
+        }
+        .modal-content {
+            border-radius: 6px 0 0 6px;
+        }
+    }
+    &.is-right {
+        display: none;
+        transform: translateX(400%);
+        transition: 400ms;
+        width: 100%;
+        height: 100vh;
+        &.active {
+            transform: translateX(0);
+            display: block;
+        }
+    }
+    .modal-body {
+        position: relative;
+        height: 100%;
+    }
+    @media (min-width: 320px) and (max-width: 768px) {
+        &.is-bottom {
+            width: 100%;
+            height: 50vh;
+            overflow: inherit;
+            &.active {
+                transform: translateY(0);
+                display: block;
+            }
+        }
+    }
+}
+
+.modal-lightbox {
+    background: $maincolor;
+    color: $white;
+    font-size: $size-7;
+    margin: 2rem auto;
+    padding: 2rem;
+    vertical-align: middle;
+    max-width: 900px;
+    width: 95%;
+    transform: translateY(400%);
+    transition: 400ms;
+    position: relative;
+    display: none;
+    &.active {
+        transform: translateY(0);
+        display: block;
+    }
+    .modal-body {
+        text-align: left;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        h2 {
+            font-size: $size-4;
+        }
+        h3 {
+            font-size: $size-5;
+        }
+        p {
+            line-height: 1.8;
+            margin: 1rem 0;
+        }
+        ul, ol {
+            line-height: 1.5;
+            margin: 1rem 0;
+            padding-left: 1rem;
+            li {
+                margin-bottom: .5rem;
+                ol, ul {
+                    list-style-type: none;
+                    padding-left: .5rem;
+                }
+            }
+        }
+        ul {
+            list-style-type: decimal;
+        }
+        ol {
+            list-style-type: square;
+        }
+    }
+    @media (min-width: 320px) and (max-width: 768px) {
+        .modal-body {
+            padding: .5rem 2rem;
+            width: 100%;
+        }
+    }
+}
+
+.modal-closeButton {
+    background: transparent;
+    border: transparent 1px solid;
+    color: $white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    width: 36px;
+    height: 36px;
+    z-index: 49;
+    svg {
+        fill: $white;
+        width: 32px;
+        height: 32px;
+    }
+    &:hover {
+        background: $yellow;
+        cursor: pointer;
+        svg {
+            fill: $maincolor;
+        }
+    }
+}

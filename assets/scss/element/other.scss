@@ -1,0 +1,51 @@
+.block {
+    @include block;
+}
+
+.delete {
+    @include delete;
+}
+
+.breadcrumbs {
+    display: flex;
+    line-height: 1;
+    margin-bottom: 4px;
+    li {
+        color: $grey;
+        font-size: $size-7;
+        font-weight: 400;
+        padding-right: 1.5em;
+        position: relative;
+        &:not(:last-child):after {
+            content: "";
+            background: $grey;
+            width: 1px;
+            height: 12px;
+            position: absolute;
+            right: 0.75em;
+            top: 1px;
+            transform: rotate(30deg);
+        }
+        a {
+            color: $grey;
+            &:hover {
+                color: $black;
+            }
+        }
+    }
+}
+
+.number {
+    align-items: center;
+    background-color: $background;
+    border-radius: 290486px;
+    display: inline-flex;
+    font-size: $size-medium;
+    height: 2em;
+    justify-content: center;
+    margin-right: 1.5rem;
+    min-width: 2.5em;
+    padding: 0.25rem 0.5rem;
+    text-align: center;
+    vertical-align: top;
+}

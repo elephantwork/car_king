@@ -1,0 +1,57 @@
+<!-- jQuery -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- jquery-loading v1.3.0 -->
+<script src="https://cdn.jsdelivr.net/npm/jquery-easy-loading@1.3.0/dist/jquery.loading.min.js"></script>
+<!-- Plugins Cursor Styles -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+<script src="./assets/vendors/customcursor.js"></script>
+<!-- Head ScrollUp fixed -->
+<script src="./assets/vendors/scrolltofixed.js"></script>
+<script type="text/javascript" src="./assets/js/Script.js"></script>
+<script type="text/javascript" src="./assets/vendors/show-on-scroll.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 600) {
+                $('.scroll-show').fadeIn();
+            } else {
+                $('.scroll-show').fadeOut();
+            }
+        });
+    });
+</script>
+<!-- lazy img-->
+<script type="text/javascript">
+    $("img.lazy").lazyload({
+        effect : "fadeIn"
+    });
+</script>
+<!-- Swiper JS -->
+<!--<script src="./assets/vendors/swiper/swiper.min.js"></script>-->
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script type="text/javascript">
+    var swiper = new Swiper('.swiper-container', {
+        loop: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+    });
+    $(".swiper-container").mouseenter(function () {
+        swiper.autoplay.stop();
+    });
+    $(".swiper-container").mouseleave(function () {
+        swiper.autoplay.start();
+    });
+</script>
+<!-- google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-58197782-2"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+    dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-58197782-2');
+</script>

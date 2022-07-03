@@ -1,0 +1,42 @@
+ #footer {
+    background: $white;
+    font-size: $size-7;
+    padding: 2rem 0;
+    text-align: center;
+     position: relative;
+     z-index: 11;
+    .footer-slogan {
+        display: flex;
+        justify-content: center;
+        line-height: 25px;
+        margin: 0 auto;
+        padding: 18px 0;
+        text-align: center;
+        .slogans {
+            display: inline-block;
+            height: 15px;
+            padding: 0 .5rem;
+        }
+        #slogan_en {
+            height: 16px;
+            position: relative;
+            top: 1px;
+        }
+    }
+    .footer-info {
+        display: block;
+        letter-spacing: 1px;
+        line-height: 1.8;
+        margin: 0 auto;
+    }
+    @media (min-width: 768px) {
+        .slogans {
+            height: 14px;
+            padding: 0 1rem;
+        }
+        #slogan_en {
+            height: 15px;
+            top: 1px;
+        }
+    }
+}

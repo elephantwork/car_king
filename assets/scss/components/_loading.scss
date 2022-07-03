@@ -1,0 +1,58 @@
+$animation-duration: 3s;
+
+#loading-overlay {
+    background: rgba($purple-dark, 1);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1002;
+    &.is-complate {
+        display: none;
+        z-index: -1;
+    }
+}
+
+.loading {
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+    .blob-1, .blob-2{
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        background: $maincolor;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .blob-1{
+        left:20%;
+        animation: osc-l 2.5s ease infinite;
+    }
+    .blob-2{
+        left:80%;
+        animation: osc-r 2.5s ease infinite;
+        background: $yellow;
+    }
+}
+
+@keyframes osc-l{
+	0%{left:20%;}
+	50%{left:50%;}
+	100%{left:20%;}
+}
+@keyframes osc-r{
+	0%{left:80%;}
+	50%{left:50%;}
+	100%{left:80%;}
+}
