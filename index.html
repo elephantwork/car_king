@@ -16,15 +16,15 @@
 <meta name="keywords" content="風傳媒,金融,理財,投資,線上測驗,ETF,外匯,台股,退休,保險"/>
 <meta name="author" content="Storm.mg">
 <!-- Schema.org for Google -->
-<meta itemprop="name" content="2022大趨勢 - 疫後經濟．獨家解析 ｜ 風傳媒">
+<meta itemprop="name" content="">
 <meta itemprop="description" content="">
-<meta itemprop="image" content="https://events.storm.mg/campaign/2021SMCF_5/fb-img.png">
-<meta itemprop="url" content="https://events.storm.mg/campaign/2021SMCF_5">
+<meta itemprop="image" content="">
+<meta itemprop="url" content="">
 <!-- Open Graph general -->
 <meta property="fb:app_id" content="917307478388825" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="風傳媒" />
-<meta property="og:title" content="風傳媒高峰論壇《2022大趨勢》｜ 疫後經濟 ‧ 獨家解析 - 風傳媒"/>
+<meta property="og:title" content=""/>
 <meta property="og:description" content="" />
 <meta property="og:image" content="" />
 <meta property="og:url" content="" />
@@ -62,10 +62,10 @@
                                 <h2>汽車革命時代來臨<small>你與未來移動的距離有多近</small></h2>
                             </header>
                             <div class="mainheader--description">
-                                <p>當車不再只是交通工具，而是帶給生活的啟發，<br class="is-mobile"/>如何做個聰明的未來移動家？<br />檢視你與未來移動的距離是一步之差還是一圈地球之差！</p>
+                                <p>當車不再只是交通工具，<br class="is-mobile"/>而是帶給生活的啟發，<br class="is-mobile"/>如何做個聰明的未來移動家？<br />檢視你與未來移動的距離<br class="is-mobile"/>是一步之差還是一圈地球之差！</p>
                             </div>
                             <div class="buttons is-centered action-buttons sbtn">
-                                <button type="button" class="button is-rounded is-info" id="start-btn">開始測驗</button>
+                                <a href="#section-qa" type="button" class="button is-rounded" id="start-btn">開始測驗</a>
                             </div>
                         </div>
                         <img src="./assets/photo/GlacialWhitePearl_swp_00048.png" class="nq5" width="" height="" alt="NQ5">
@@ -120,15 +120,15 @@
                                 <div class="content">
                                     <div class="field">
                                         <label for="fullname" class="label is-small">姓名</label>
-                                        <input type="text" class="input" id="fullname" name="names" placeholder="請填寫與身份證上相同姓名" required />
+                                        <input type="text" class="input" id="fullname" name="names" placeholder="請填寫與身份證上相同姓名" required autofocus />
                                     </div>
                                     <div class="field">
                                         <label for="phone" class="label is-small">手機</label>
-                                        <input type="tel" class="input" id="phone" pattern="^09[0-9]{8}" placeholder="請確認手機正確及有效" required />
+                                        <input type="tel" class="input" id="phone" pattern="^09[0-9]{8}" inputmode="numeric" placeholder="請確認手機正確及有效" required />
                                     </div>
                                     <div class="field">
                                         <label for="email" class="label is-small">信箱</label>
-                                        <input type="text" class="input" id="email" name="email" placeholder="請確認信箱正確及有效" required />
+                                        <input type="text" class="input" id="email" name="email" placeholder="請確認信箱正確及有效" inputmode="email" required />
                                     </div>
                                     <div class="fidle is-address">
                                         <label for="address" class="label is-small">收件地址</label>
@@ -188,16 +188,18 @@
                           }
                         </script>
                     </div>
-                    <!-- 完成測驗出現品牌介紹區 -->
-                    <div class="brand">
-                        <div class="container is-fullwidth is-parallax scroll-style show-on-scroll">
-                            <h2>移動 ･ 啟發人心</h2>
-                            <p>Kia 相信移動可以激發靈感。</p>
-                            <p>當我們移動時，會看見世界不同的樣貌，會得到新體驗、遇到新朋友，得到新的觀點，進而受到啟發。</p>
-                            <p>75 年來，Kia 致力於讓人們可以順利移動。</p>
-                            <p>使人們自由往來各處、人與人之間能更容易的連結，也讓彼此的身心靈沒有距離。</p>
-                            <p>所以為您打造了專屬於您的移動空間，讓您擁有更多時間獲得啟發，實現所想。</p>
-                            <p>Kia 提供更有意義且便利的服務，讓您有時間從事能獲得靈感的活動，和家人或朋友一同出遊或是純粹放鬆。</p>
+                    <!-- 送出抽獎資料後出現品牌介紹區 -->
+                    <div class="brand" id="section-brand">
+                        <div class="container is-fullwidth is-parallax">
+                            <div class="content">
+                                <h2>移動 ･ 啟發人心</h2>
+                                <p>Kia 相信移動可以激發靈感。</p>
+                                <p>當我們移動時，會看見世界不同的樣貌，會得到新體驗、遇到新朋友，得到新的觀點，進而受到啟發。</p>
+                                <p>75 年來，Kia 致力於讓人們可以順利移動。</p>
+                                <p>使人們自由往來各處、人與人之間能更容易的連結，也讓彼此的身心靈沒有距離。</p>
+                                <p>所以為您打造了專屬於您的移動空間，讓您擁有更多時間獲得啟發，實現所想。</p>
+                                <p>Kia 提供更有意義且便利的服務，讓您有時間從事能獲得靈感的活動，和家人或朋友一同出遊或是純粹放鬆。</p>
+                            </div>
                         </div>
                     </div>
                     <!-- 送出抽獎資料後出現測驗結果-->
@@ -208,7 +210,7 @@
                             </header>
                             <div class="qa-result">
                                 <div class="pic">
-                                    <img src="assets/images/qa-distance1.png" id="rpic" alt="">
+                                    <img src="assets/images/qa-distance4.png" id="rpic" alt="" loading="lazy">
                                 </div>
                                 <div class="result">
                                     <div class="num" id="result-num">100<span>%</span></div>
@@ -231,7 +233,7 @@
                             <div class="swiper award-slide">
                                 <div class="swiper-wrapper">
                                     <div class="award-list_item swiper-slide">
-                                        <div class="award-list_thumb"><img src="./assets/photo/award_1.jpg" width="400" height="400" alt=""></div>
+                                        <div class="award-list_thumb"><img src="./assets/photo/award_1.jpg" width="400" height="400" alt="" loading="lazy"></div>
                                         <div class="award-list_headline">
                                             <div class="brand">1獎 <small>價值 $32,900 元</small></div>
                                             <div class="award">Tumi 黑色旅行箱</div>
@@ -239,7 +241,7 @@
                                         </div>
                                     </div>
                                     <div class="award-list_item swiper-slide">
-                                        <div class="award-list_thumb"><img src="./assets/photo/award_2.jpg" width="400" height="400" alt=""></div>
+                                        <div class="award-list_thumb"><img src="./assets/photo/award_2.jpg" width="400" height="400" alt="" loading="lazy"></div>
                                         <div class="award-list_headline">
                                             <div class="brand">2獎 <small>價值 $18,900 元</small></div>
                                             <div class="award">Tumi 黑色後背包</div>
@@ -247,7 +249,7 @@
                                         </div>
                                     </div>
                                     <div class="award-list_item swiper-slide">
-                                        <div class="award-list_thumb"><img src="./assets/photo/award_3.jpg" width="400" height="400" alt=""></div>
+                                        <div class="award-list_thumb"><img src="./assets/photo/award_3.jpg" width="400" height="400" alt="" loading="lazy"></div>
                                         <div class="award-list_headline">
                                             <div class="brand">3獎 <small>價值 $12,990 元</small></div>
                                             <div class="award">Mio MiVue R850D 星光級 HDR 數位防眩 WIFI GPS 電子後視鏡</div>
@@ -255,7 +257,7 @@
                                         </div>
                                     </div>
                                     <div class="award-list_item swiper-slide">
-                                        <div class="award-list_thumb"><img src="./assets/photo/award_4.jpg" width="400" height="400" alt=""></div>
+                                        <div class="award-list_thumb"><img src="./assets/photo/award_4.jpg" width="400" height="400" alt="" loading="lazy"></div>
                                         <div class="award-list_headline">
                                             <div class="brand">4獎</div>
                                             <div class="award">遠東SOGO $5,000 元禮券</div>
@@ -263,7 +265,7 @@
                                         </div>
                                     </div>
                                     <div class="award-list_item swiper-slide">
-                                        <div class="award-list_thumb"><img src="./assets/photo/award_5.jpg" width="400" height="400" alt=""></div>
+                                        <div class="award-list_thumb"><img src="./assets/photo/award_5.jpg" width="400" height="400" alt="" loading="lazy"></div>
                                         <div class="award-list_headline">
                                             <div class="brand">5獎</div>
                                             <div class="award">統一超商 $1,000 元虛擬商品卡</div>
@@ -275,7 +277,7 @@
                                 <div class="swiper-button-prev"></div>
                                 <div class="swiper-pagination"></div>
                             </div>
-                            <img src="/assets/images/gift.png" class="award-list--gift" alt="">
+                            <img src="/assets/images/gift.png" class="award-list--gift" alt="" loading="lazy">
                         </div>
                         <p>了解更多<button type="button" class="button is-text privacyButton">活動辦法與相關規範</button><br>主辦單位保有最終修改、變更、活動解釋及取消本活動之權利，若有相關異動將公布於網站，恕不另行通知</p>
                     </div>
@@ -575,8 +577,8 @@
     </script>
     <script type="text/javascript">
         var swiper = new Swiper(".award-slide", {
-            slidesPerView: 3,
-            spaceBetween: 60,
+            slidesPerView: 2,
+            spaceBetween: 30,
             keyboard: {
                 enabled: true,
             },
@@ -587,6 +589,20 @@
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 60,
+                },
             },
         });
     </script>
