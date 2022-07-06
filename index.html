@@ -75,26 +75,10 @@
                 <section class="section is-qa" data-anchor="qa-game" id="section-qa">
                     <div class="container is-game scroll-style show-on-scroll">
                         <div class="qa-game">
-                            <div class="qa-tag" id="qa-topic">汽車產業趨勢</div>
+                            <div class="qa-tag" id="qa-topic"></div>
                             <div id="qa-content">
-                                <h3 class="question qa-title"><storng class="num">01</storng>關於汽車產業現況的敘述，下列何者錯誤？</h3>
+                                <h3 class="question qa-title"><strong class="num"></strong></h3>
                                 <ul class="content options">
-                                    <li class="field error">
-                                        <label for="question1-a1" class="inside-label style-label"><input type="radio" id="question1-a1" name="question1" value="question1-a1"><span class="checkvalue">A 2022 年 3 月底，國發會正式公布「台灣 2050 淨零排放路徑」</span><span class="checkmark"></span></label>
-                                        <div class="symbol"><img src="img/icon-error.svg" alt=""></div><div class="text">答錯囉，請重新選擇！</div>
-                                    </li>
-                                    <li>
-                                        <label for="question1-a2" class="inside-label style-label"><input type="radio" id="question1-a2" name="question1" value="question1-a2"><span class="checkvalue">B 2021 年台灣電動車款總銷量占整體新車銷售比重超過 15％</span><span class="checkmark"></span></label>
-                                    </li>
-                                    <li>
-                                        <label for="question1-a3" class="inside-label style-label"><input type="radio" id="question1-a3" name="question1" value="question1-a3"><span class="checkvalue">C 2021 年，台灣泛 SUV(含 CUV 跨界休旅車)銷售總數已超過整體新車市場 25% 以上佔比</span><span class="checkmark"></span></label>
-                                    </li>
-                                    <li>
-                                        <label for="question1-a4" class="inside-label style-label"><input type="radio" id="question1-a4" name="question1" value="question1-a4"><span class="checkvalue">D 新能源車導入與充電站(樁)設置已成為台灣汽車產業新一波趨勢</span><span class="checkmark"></span></label>
-                                    </li>
-                                    <li>
-                                        <label for="question1-a5" class="inside-label style-label"><input type="radio" id="question1-a5" name="question1" value="question1-a5"><span class="checkvalue">E 電動車貨物稅及汽車牌照稅減免僅至 2023 年 12 月</span><span class="checkmark"></span></label>
-                                    </li>
                                 </ul>
                                 <div class="qa-total">
                                     <p>第 <span id="tip-num">1</span> 題，<small>共 9 題</small></p>
@@ -104,7 +88,7 @@
                             <div class="tips qa-tips" id="tips-wrap">
                                 <div class="tips-content">
                                     <img src="/assets/images/MaterialSymbolsTipsAndUpdatesOutline.svg" width="32" alt="tips">
-                                    <div id="tips-text">行政院會於去年底通過「使用牌照稅法」修正草案，延長電動汽車、電動機車免徵牌照稅四年，至 2025 年 12 月 31 日。</div>
+                                    <div id="tips-text"></div>
                                 </div>
                             </div>
                         </div>
@@ -124,7 +108,7 @@
                                     </div>
                                     <div class="field">
                                         <label for="phone" class="label is-small">手機</label>
-                                        <input type="tel" class="input" id="phone" pattern="^09[0-9]{8}" inputmode="numeric" placeholder="請確認手機正確及有效" required />
+                                        <input type="tel" class="input" id="phone" name="tel" pattern="^09[0-9]{8}" inputmode="numeric" placeholder="請確認手機正確及有效" required />
                                     </div>
                                     <div class="field">
                                         <label for="email" class="label is-small">信箱</label>
@@ -144,7 +128,7 @@
                                         <button type="button" class="button is-text privacyButton">活動辦法與相關規則</button>
                                     </div>
                                 </div>
-                                <input type="hidden" id="errorcount" name="errorcount" value="">
+                                <input type="hidden" id="score" name="score" value="0">
                                 <div class="buttons is-centered"><button type="submit" class="button is-link is-fullwidth">送出</button></div>
                             </form>
                         </div>
@@ -152,38 +136,43 @@
                           var submintcount=0
                           function chk()
                           {
-                            if($('input[name=names]').val()==''){alert("請輸入姓名");return false;}
-                            if($('input[name=tel]').val()==''){alert("請輸入電話");return false;}
-                            if($('input[name=email]').val()==''){alert("請輸入email");return false;}
-                            if($('select[name=county]').val()==''){alert("請選擇縣市");return false;}
-                            if($('input[name=email]').val()==''){alert("請輸入email");return false;}
-                            if ('y' == $('input[name=agreestatement]:checked').val()) {} else {alert('請同意個資蒐集前告知事項！');return false;}
-                            if(submintcount==0)
-                            {
-                              submintcount=1;
-                            $.ajax({
-                                url: "ajax.asp",
-                                type: "post",
-                                data: {
-                                    names: $('input[name=names]').val(),
-                                    tel: $('input[name=tel]').val(),
-                                    email: $('input[name=email]').val(),
-                                    county: $('select[name=county]').val(),
-                                    district: $('select[name=district]').val(),
-                                    zipcode: $('select[name=zipcode]').val(),
-                                    errorcount: $('input[name=errorcount]').val()
-                                },
-                                dataType: "text",
-                                success: function (e) {
-                                //   console.log(e)
-                                   submintcount=0;
-                                   showFinish()
-                                },
-                                error: function () {
-                                   // onchangeoffcode()
+                                if($('input[name=names]').val()==''){alert("請輸入姓名");return false;}
+                                if($('input[name=tel]').val()==''){alert("請輸入電話");return false;}
+                                if($('input[name=email]').val()==''){alert("請輸入email");return false;}
+                                if($('select[name=county]').val()==''){alert("請選擇縣市");return false;}
+                                if($('input[name=address]').val()==''){alert("請輸入地址");return false;}
+                                if ('privacy' == $('input[name=privacy]:checked').val()) {} else {alert('請同意個資蒐集前告知事項！');return false;}
+                                if(submintcount==0)
+                                {
+                                    submintcount = 1;
+
+                                    $.ajax({
+                                        url: "api/users",
+                                        type: "post",
+                                        data: JSON.stringify({
+                                            name: $('input[name=names]').val(),
+                                            phone: $('input[name=tel]').val(),
+                                            email: $('input[name=email]').val(),
+                                            county: $('select[name=county]').val(),
+                                            district: $('select[name=district]').val(),
+                                            zipcode: $('input[name=zipcode]').val(),
+                                            address: $('input[name=address]').val(),
+                                            score: $('input[name=score]').val()
+                                        }),
+                                        contentType: "application/json; charset=utf-8",
+                                        dataType: "json",
+                                        success: function (e) {
+                                        },
+                                        statusCode: {
+                                            201: function (data) {
+                                                submintcount = 0;
+                                                showFinish();
+                                            }
+                                        },
+                                        error: function () {
+                                        }
+                                    });
                                 }
-                            })
-                            }
                             return false;
                           }
                         </script>
@@ -216,8 +205,8 @@
                                     <div class="num" id="result-num">100<span>%</span></div>
                                     <div id="result-text"><p>恭喜你！你與未來移動只有一個紅綠燈的距離！</p></div>
                                     <div class="share">
-                                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://vehicleking.storm.mg" target="_blank" class="button is-rounded" id="sharefb">分享結果至FB</a>
-                                        <a href="https://social-plugins.line.me/lineit/share?url=https://vehicleking.storm.mg" target="_blank" class="button is-rounded" id="shareline">分享結果至line</a>
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://vehicleking.storm.mg/" target="_blank" class="button is-rounded" id="sharefb">分享結果至FB</a>
+                                        <a href="https://social-plugins.line.me/lineit/share?url=https://vehicleking.storm.mg/" target="_blank" class="button is-rounded" id="shareline">分享結果至line</a>
                                     </div>
                                 </div>
                             </div>
