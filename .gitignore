@@ -14,7 +14,7 @@ docs/*
 library/*
 
 *.esdynamo
-*.json
+
 *.config
 
 build/

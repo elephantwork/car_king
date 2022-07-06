@@ -1,0 +1,248 @@
+{
+    "topic": [
+        {
+            "title": "汽車知識王",
+            "question": [
+                {
+                    "title": "汽車產業趨勢",
+                    "text": "關於汽車產業現況的敘述，下列何者錯誤？",
+                    "options": [
+                        {
+                            "text": "2022年3月底，國發會正式公布「台灣2050淨零排放路徑」",
+                            "answer": false
+                        },
+                        {
+                            "text": "2021年台灣電動車款總銷量占整體新車銷售比重超過15％",
+                            "answer": false
+                        },
+                        {
+                            "text": "2021年，台灣泛SUV(含CUV跨界休旅車)銷售總數已超過整體新車市場25%以上佔比",
+                            "answer": false
+                        },
+                        {
+                            "text": "新能源車導入與充電站(樁)設置已成為台灣汽車產業新一波趨勢",
+                            "answer": false
+                        },
+                        {
+                            "text": "電動車貨物稅及汽車牌照稅減免僅至2023年12月31日(正解為2025年12月31日)",
+                            "answer": true
+                        }
+                    ],
+                    "tip": "行政院會於去年底通過「使用牌照稅法」修正草案，延長電動汽車、電動機車免徵牌照稅四年，至2025年12月31日"
+                },
+                {
+                    "title": "電動車、EV6",
+                    "text": "請問更換電動車的優點有哪些？",
+                    "options": [
+                        {
+                            "text": "燃料及維護成本低",
+                            "answer": false
+                        },
+                        {
+                            "text": "優惠期限內可享貨物稅及牌照稅、燃料稅減免",
+                            "answer": false
+                        },
+                        {
+                            "text": "可減少廢氣排放，有效保護環境",
+                            "answer": false
+                        },
+                        {
+                            "text": "比燃油車更優異的動力性能",
+                            "answer": false
+                        },
+                        {
+                            "text": "以上皆是",
+                            "answer": true
+                        }
+                    ],
+                    "tip": "電動車不僅可減少廢氣排放、燃料及維護成本低，優惠期限內更可享貨物稅及牌照稅、燃料稅減免，動力性能也比燃油車更優異。"
+                },
+                {
+                    "title": "電動車、EV6",
+                    "text": "「E-GMP全新電動車模組化平台」是Kia 集團為了加速電動車研發而開發的模組化專用平台，請問它包含哪些優點？",
+                    "options": [
+                        {
+                            "text": "快速充電",
+                            "answer": false
+                        },
+                        {
+                            "text": "高續航力",
+                            "answer": false
+                        },
+                        {
+                            "text": "高開發彈性",
+                            "answer": false
+                        },
+                        {
+                            "text": "更好的車內空間配置",
+                            "answer": false
+                        },
+                        {
+                            "text": "以上皆是",
+                            "answer": true
+                        }
+                    ],
+                    "tip": "「E-GMP全新電動車模組化平台」不只具備快速充電、高續航力、高開發談性，也有更好的車內空間配置。"
+                },
+                {
+                    "title": "電動車、EV6",
+                    "text": "Kia EV6擁有多遠的續航里程？",
+                    "options": [
+                        {
+                            "text": "350km",
+                            "answer": false
+                        },
+                        {
+                            "text": "440km",
+                            "answer": false
+                        },
+                        {
+                            "text": "500km",
+                            "answer": false
+                        },
+                        {
+                            "text": "560km",
+                            "answer": true
+                        }
+                    ],
+                    "tip": "Kia EV6的續航力最遠可達560km"
+                },
+                {
+                    "title": "電動車、EV6",
+                    "text": "現在電動車才剛流行，如果成為Kia EV6車主，可以獲得以下哪項服務？",
+                    "options": [
+                        {
+                            "text": "Kia同時與三間充電營運商合作，擴大KIA車主的充電版圖，全台已有超過137座AC及35座DC充電站",
+                            "answer": false
+                        },
+                        {
+                            "text": "2022年，Kia充電營運合作夥伴的DC充電站將擴展至90座",
+                            "answer": false
+                        },
+                        {
+                            "text": "Kia車主皆享有一年充電免費的回饋",
+                            "answer": false
+                        },
+                        {
+                            "text": "未來展示間也將設置快充，方便Kia車主使用",
+                            "answer": false
+                        },
+                        {
+                            "text": "以上皆是",
+                            "answer": true
+                        }
+                    ],
+                    "tip": "凡是Kia EV6車主，皆享有一年充電免費的回饋，Kia同時與三間充電營運商合作，擴大KIA車主的充電版圖，全台已有超過137座AC及35座DC充電站。2022年，Kia充電營運合作夥伴的DC充電站將擴展至90座，未來展示間也將設置快充，方便Kia車主使用。"
+                },
+                {
+                    "title": "電動車、EV6",
+                    "text": "關於Kia EV6的使用情境，下列何者錯誤？",
+                    "options": [
+                        {
+                            "text": "住家一定要安裝充電樁，否則就不適合購買電動車",
+                            "answer": true
+                        },
+                        {
+                            "text": "Kia EV6搭載800V高壓電池系統，18分鐘即可充電至80%；充電4.5分鐘即可行駛100km",
+                            "answer": false
+                        },
+                        {
+                            "text": "Kia EV6可透過V2L功能，就能為電器用品提供電源在任何地點使用",
+                            "answer": false
+                        },
+                        {
+                            "text": "使用E-GMP平台打造的電動車，維修時不須更換整組電池，可以最小模組化更換電池，節省維護成本",
+                            "answer": false
+                        },
+                        {
+                            "text": "下載「Kia Life+」APP，能協助您快速找到目的地周遭能使用的充電站，並可得知每個充電站的充電規格、營業時間、費率",
+                            "answer": false
+                        }
+                    ],
+                    "tip": "Kia同時與三間充電營運商合作，全台已有超過137座AC及35座DC充電站，所以住家不用一定要安裝充電樁，才能購買電動車。"
+                },
+                {
+                    "title": "NQ5",
+                    "text": "Kia All-New Sportage的創新科技是以下哪一項？",
+                    "options": [
+                        {
+                            "text": "全車系標配Level 2智慧駕駛輔助",
+                            "answer": false
+                        },
+                        {
+                            "text": "雙12.3吋全景曲面顯示螢幕",
+                            "answer": false
+                        },
+                        {
+                            "text": "E-Shift電子旋鈕排檔系統",
+                            "answer": false
+                        },
+                        {
+                            "text": "同級唯一BVM盲區顯影輔助系統",
+                            "answer": false
+                        },
+                        {
+                            "text": "以上皆是",
+                            "answer": true
+                        }
+                    ],
+                    "tip": "此次Kia All-New Sportage的創新科技有全車系標配Level 2智慧駕駛輔助、雙12.3吋全景曲面顯示螢幕、E-Shift電子旋鈕排檔系統，更具備同級唯一BVM盲區顯影輔助系統。"
+                },
+                {
+                    "title": "NQ5",
+                    "text": "以下哪一項不是Kia All-New Sportage的產品特色？",
+                    "options": [
+                        {
+                            "text": "2022年式小改款車型",
+                            "answer": true
+                        },
+                        {
+                            "text": "前後排加熱座椅及後座椅背14段調整",
+                            "answer": false
+                        },
+                        {
+                            "text": "Harman Kardon® 頂級環場音響系統",
+                            "answer": false
+                        },
+                        {
+                            "text": "全車由來自曾任德國豪華品牌的設計師操刀設計",
+                            "answer": false
+                        },
+                        {
+                            "text": "同級唯一供消費者個性化的消光車色選擇",
+                            "answer": false
+                        }
+                    ],
+                    "tip": "大改款第五代Sportage以大幅度的外型變更與全新動力作為主打，左右飛鏢狀的定位燈包裹著銳利LED頭燈組的設計，前方仍維持虎鼻樣貌卻以更新世代的樣貌裁切呈現，車尾則採用運動化造型後保桿與同樣尖銳感十足的尾燈組合，且尾門也與EV6同樣採取更接近平切斷面的方式呈現，讓整台車創造出與過往截然不同的新樣貌"
+                },
+                {
+                    "title": "NQ5",
+                    "text": "Kia All-New Sportage引領同級對手的優勢是？",
+                    "options": [
+                        {
+                            "text": "以自然界有機物為靈感的突出外觀設計",
+                            "answer": false
+                        },
+                        {
+                            "text": "符合市場趨勢的小排量大動力",
+                            "answer": false
+                        },
+                        {
+                            "text": "同級唯一BVM盲區顯影輔助系統/BCA盲點防撞主動煞車輔助系統",
+                            "answer": false
+                        },
+                        {
+                            "text": "全車系標配全景曲面顯示螢幕(含主機中文化)",
+                            "answer": false
+                        },
+                        {
+                            "text": "以上皆是",
+                            "answer": true
+                        }
+                    ],
+                    "tip": "Kia All-New Sportage以自然界有機物為靈感的突出外觀設計，搭配全車系標配全景曲面顯示螢幕(含主機中文化)、同級唯一BVM盲區顯影輔助系統/BCA盲點防撞主動煞車輔助系統，再加上符合市場趨勢的小排量大動力，與同級車相比勝出許多。"
+                }
+            ]
+        }
+    ]
+}
