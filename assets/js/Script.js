@@ -108,6 +108,7 @@ $(function () {
 
 function showFinish() {
     qaCompleted();
+    $("#is-game").removeClass("active");
 }
 
 function qaCompleted() {
