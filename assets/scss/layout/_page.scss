@@ -75,7 +75,7 @@
         min-width: 240px;
         &:before {
             content: "";
-            background: url(/assets/images/Polygon3.svg) 0 0 no-repeat;
+            background: url(../images/Polygon3.svg) 0 0 no-repeat;
             background-size: 52px;
             width: 52px;
             height: 24px;
@@ -125,7 +125,7 @@
     z-index: 9;
     &.is-intro {
         .container {
-            background: url(/assets/images/brain.png) center 10% no-repeat;
+            background: url(../images/brain.png) center 10% no-repeat;
             background-size: 100%;
             display: flex;
             flex-wrap: wrap;
@@ -214,8 +214,10 @@
                 flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
-                height: 100vh;
-                min-height: 768px;
+                &.active {
+                    height: 100vh;
+                    min-height: 768px;
+                }
             }
         }
         .qa-game, .qa-form, .qa-finish {
@@ -230,7 +232,7 @@
             position: relative;
             &:after {
                 content: "";
-                background: url(/assets/images/box-bottom.svg) 6px 11px no-repeat;
+                background: url(../images/box-bottom.svg) 6px 11px no-repeat;
                 background-size: 96.8%;
                 width: calc(100% + 18px);
                 height: 68px;
@@ -267,7 +269,7 @@
             right: -3px;
         }
         .qa-tips-btn {
-            background: url(/assets/images/tips.svg) center bottom no-repeat;
+            background: url(../images/tips.svg) center bottom no-repeat;
             background-size: contain;
             color: $yellow;
             display: inline-block;
@@ -351,7 +353,7 @@
             }
         }
         .qa-finish {
-            background: url(/assets/images/brain.png) center 10% no-repeat #fff;
+            background: url(../images/brain.png) center 10% no-repeat #fff;
             background-size: 100%;
             border: $maincolor 3px solid;
             border-top: none;
@@ -362,7 +364,7 @@
             min-height: 480px;
             &:before {
                 content: "";
-                background: url(/assets/images/box-bottom.svg) 6px 11px no-repeat;
+                background: url(../images/box-bottom.svg) 6px 11px no-repeat;
                 background-size: 96.8%;
                 width: calc(100% + 18px);
                 height: 68px;
@@ -552,7 +554,7 @@
         height: 100vh;
         min-height: 768px;
         .award-list {
-            background: url(/assets/images/Polygon3.svg) 2rem 1rem no-repeat $maincolor;
+            background: url(../images/Polygon3.svg) 2rem 1rem no-repeat $maincolor;
             color: $white;
             margin: 0 auto 2rem;
             padding: 4rem 1rem;
@@ -560,7 +562,7 @@
             position: relative;
             &:after {
                 content: "";
-                background: url(/assets/images/box-top.svg) 0 8px no-repeat;
+                background: url(../images/box-top.svg) 0 8px no-repeat;
                 width: 100%;
                 height: 60px;
                 position: absolute;
@@ -830,7 +832,7 @@
                 padding: 4rem;
                 width: 85%;
                 &:after {
-                    background: url(/assets/images/box-top.svg) 0 8px no-repeat;
+                    background: url(../images/box-top.svg) 0 8px no-repeat;
                     top: -44px;
                 }
                 &--gift {
@@ -886,7 +888,7 @@
     height: 100vh;
     overflow: hidden;
     .is-parallax {
-        background: url(/assets/photo/brand-m.png) center center no-repeat $maincolor;
+        background: url(../photo/brand-m.png) center center no-repeat $maincolor;
         background-size: cover;
         background-attachment: fixed;
         height: 100%;
@@ -908,7 +910,8 @@
     @media screen and (min-width: 1367px) {
         color: $white;
         .is-parallax {
-            background: url(/assets/photo/brand-d.png) center center no-repeat $maincolor;
+            background: url(../photo/brand-d.png) center center no-repeat $maincolor;
+            background-size: cover;
         }
         .content {
             padding: 3rem;
@@ -923,7 +926,7 @@
     position: relative;
     height: fit-content;
     h2 {
-        background: url(/assets/images/title_bg.svg) center 0 no-repeat;
+        background: url(../images/title_bg.svg) center 0 no-repeat;
         background-size: 75%;
         font-size: $size-3;
         padding: .75rem;
@@ -1020,13 +1023,12 @@
         left: 0;
         height: 19px;
         width: 19px;
-        border: $purple 1px solid;
-//        font-family: 'Glyphicons Halflings';
+        border: $maincolor 1px solid;
         &:after {
             color: $maincolor;
             content: "";
 //            font-size: .8rem;
-		    background: url("../images/icon-check.svg") no-repeat center center;
+		    background: url("../svg/ic-check.svg") no-repeat center center;
             position: absolute;
             display: none;
             top: -1px;
