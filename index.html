@@ -147,10 +147,7 @@
                                     submintcount = 1;
 
                                     $.ajax({
-                                        url: "http://vehicleking.somee.com/api/users",
-                                        xhrFields: {
-                                            withCredentials: true
-                                        },
+                                        url: "https://vehicleking.somee.com/api/users",
                                         type: "post",
                                         data: JSON.stringify({
                                             name: $('input[name=names]').val(),
