@@ -50,15 +50,11 @@ $(function () {
         }
     });
     
-// todo 可能需要reset
-//    $('#reset-btn').click(function() {
-//        var _qa_current = {
-//            title: qa_data.topic[0].title,
-//            question: qa_data.topic[0].question
-//        };
-//        qa_current = JSON.parse(JSON.stringify(_qa_current));
-//        initQA();
-//    })
+    $("#play-button").click(function() {
+        initQA();
+        $(".is-game").addClass("active");
+        $(window).scrollTop($("#section-qa").offset().top);
+    })
 
     function initQA() {
         var _qa_current = {
@@ -69,6 +65,7 @@ $(function () {
         qa_num = 0;
         qa_error = 0;
         innerQA();
+        $("#score").val(0);
         $("#section-qa .qa-form, #section-qa .brand, #section-qa .qa-finish").hide();
         $("#section-qa .qa-game").show();
     }
