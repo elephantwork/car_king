@@ -139,14 +139,14 @@ function qaCompleted() {
     $('#section-qa').show();
     $("#section-qa .qa-game, #section-qa .qa-form").hide();
     $("#section-qa .brand, #section-qa .qa-finish").show();
-    $('#rpic').attr('src', '/assets/images/qa-distance'+urlshare+'.png');
+    $('#rpic').attr('src', './assets/images/qa-distance'+urlshare+'.png');
     //$('#qa-topic-type li button').attr('disabled', true).text('Done!');
     //resizeQAShadow();
     
     //html2canvas(document.querySelector("#qa-finish-wrap")).then(canvas => {
     //    var base64 = canvas.toDataURL("image/jpeg", 1.0);
         //$('#sharePic').attr('src', base64);
-        $('#rpic').attr('src', '/assets/images/qa-distance'+urlshare+'.png');
+        $('#rpic').attr('src', './assets/images/qa-distance'+urlshare+'.png');
         $('#loading-wrap').fadeOut();
     //});
 }
