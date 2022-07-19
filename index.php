@@ -38,7 +38,6 @@ switch ($fbi){
 <meta itemprop="name" content="汽車知識王 ｜檢視你與未來移動的距離">
 <meta itemprop="description" content="當車不再只是一台車，而是生活的啟發，該如何做個聰明的未來移動家？用一首歌的時間，檢視你與未來移動的距離，是一步之差還是一圈地球之差！">
 <meta itemprop="image" content="<?= $fbShareUrl ?>">
-<meta itemprop="url" content="https://events.storm.mg/campaign/vehicleking">
 <!-- Open Graph general -->
 <meta property="fb:app_id" content="917307478388825" />
 <meta property="og:type" content="website" />
@@ -46,7 +45,6 @@ switch ($fbi){
 <meta property="og:title" content="汽車知識王 ｜檢視你與未來移動的距離"/>
 <meta property="og:description" content="當車不再只是一台車，而是生活的啟發，該如何做個聰明的未來移動家？用一首歌的時間，檢視你與未來移動的距離，是一步之差還是一圈地球之差！" />
 <meta property="og:image" content="<?= $fbShareUrl ?>" />
-<meta property="og:url" content="https://events.storm.mg/campaign/vehicleking" />
 <!--[if lt IE 9]>
     <script src="./assets/js/html5.js"></script>
     <script src="./assets/js/respond.js"></script>
@@ -237,8 +235,8 @@ switch ($fbi){
                                         <span>立即試駕體驗</span>
                                     </a>
                                     <div class="share">
-                                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://events.storm.mg/campaign/vehicleking/" target="_blank" class="button is-rounded" id="sharefb">分享結果至FB</a>
-                                        <a href="https://social-plugins.line.me/lineit/share?url=https://events.storm.mg/campaign/vehicleking/" target="_blank" class="button is-rounded" id="shareline">分享結果至line</a>
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=<?= $webUrl ?>" target="_blank" class="button is-rounded" id="sharefb">分享結果至FB</a>
+                                        <a href="https://social-plugins.line.me/lineit/share?url=<?= $webUrl ?>" target="_blank" class="button is-rounded" id="shareline">分享結果至line</a>
                                     </div>
                                 </div>
                                 <button type="button" class="button is-rounded is-fullwidth" id="play-button">再玩一次</button>
